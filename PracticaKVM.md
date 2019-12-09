@@ -1,4 +1,4 @@
-**Crea 2 máquinas virtuales, debian Buster, con un disco en fichero, utilizando aprovisionamiento ligero, una conectada a una red NAT (10.0.0.0/24) y la otra a un bridge externo. 
+**Crea 2 máquinas virtuales, debian Buster, con un disco en fichero, utilizando aprovisionamiento ligero, una conectada a una red NAT (10.0.0.0/24) y la otra a un bridge externo.**
 
 Driver virtio en todo lo que se pueda.
 
@@ -13,7 +13,6 @@ Formatting 'paloma.qcow2', fmt=qcow2 size=4294967296 cluster_size=65536 lazy_ref
 ~~~
 
 
-************configurar esto con internet:
 Y se instala:
 ~~~
 kvm -m 1024 -hda paloma.qcow2 \
