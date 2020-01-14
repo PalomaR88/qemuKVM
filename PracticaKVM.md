@@ -1,4 +1,4 @@
-**Crea 2 máquinas virtuales, debian Buster, con un disco en fichero, utilizando aprovisionamiento ligero, una conectada a una red NAT (10.0.0.0/24) y la otra a un bridge externo. 
+**Crea 2 máquinas virtuales, debian Buster, con un disco en fichero, utilizando aprovisionamiento ligero, una conectada a una red NAT (10.0.0.0/24) y la otra a un bridge externo.**
 
 Driver virtio en todo lo que se pueda.
 
