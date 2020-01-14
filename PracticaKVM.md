@@ -13,17 +13,20 @@ Formatting 'paloma.qcow2', fmt=qcow2 size=4294967296 cluster_size=65536 lazy_ref
 ~~~
 
 
-************configurar esto con internet:
 Y se instala:
 ~~~
 kvm -m 1024 -hda paloma.qcow2 \
 -cdrom /home/paloma/Descargas/debian-10.2.0-amd64-netinst.iso 
 ~~~
 
-lo siguiente que hay que hacer:
+Lo siguiente que hay que hacer:
+
 qemu-img info paloma.qcow2
 
-qemu-img create -b paloma1.qcow2 -f qcow2 paloma.qcow2
+Se crea una imagen utilizando el aprovisionamiento ligero con la imagen anteriormente creada.
+~~~
+qemu-img create -b paloma.qcow2 -f qcow2 paloma1.qcow2
+~~~
 
 
 

@@ -52,3 +52,23 @@ Tipos de redes que podemos crear:
 * Y las reglas de encaminamiento.
 
 
+# Opciones
+/etc/libvirt/qemu/maquina.xml ---> aquí se guardan los fichero sxml de las máquinas que se han creado. 
+
+Se puede copiar un fichero xml de una máquina ya creada para hacer otra máquina igual. Hay que modificar ciertos parámetros:
+- name
+- uuid --> cat /proc/sys/kernel/random/uuid esto es para que el sistema cree un uid aleatorio. 
+- source --> cambiar el nombre
+- mac
+- model type --> esto por defecto pone un tipo que no vale porque no se aprobechan bien los recursos de debian. 
+
+Ese fichero, que hemos copiado y modificado para crear una nueva, se carga en virtmanager para terminar de crear la máquina. 
+
+virsh -c qemu://system define debian10.xml --> para levantar la máquina con la red.
+
+virsh -> buscar esto con detenimiento
+
+
+
+
+
